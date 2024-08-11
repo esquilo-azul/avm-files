@@ -33,8 +33,8 @@ module Avm
           end
 
           def run_filesystem_traverser
-            if parsed.paths.any?
-              parsed.paths.each { |path| traverser_check_path(path) }
+            if paths.any?
+              paths.each { |path| traverser_check_path(path) }
             else
               on_none_path_informed
             end
